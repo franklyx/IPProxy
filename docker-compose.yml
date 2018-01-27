@@ -1,0 +1,10 @@
+version: "3.2"
+
+services:
+  proxy_crawl:
+    build: .
+    image: proxy_crawl:v1
+    container_name: proxy_crawl
+    tty: true
+    ports:
+      - 5555:5555
